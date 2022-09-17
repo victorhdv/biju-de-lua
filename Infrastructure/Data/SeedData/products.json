@@ -1,0 +1,114 @@
+[
+  {
+    "Name": "Pulseiras Cordão",
+    "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
+    "Price": 19.99,
+    "PictureUrl": "images/products/01-Pulseiras-cordao.png",
+    "ProductTypeId": 1
+  },
+  {
+    "Name": "Pulseiras Argolas",
+    "Description": "Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.",
+    "Price": 19.99,
+    "PictureUrl": "images/products/01-Pulseiras-argola.png",
+    "ProductTypeId": 1
+  },
+  {
+    "Name": "Brinco Nó Dourado",
+    "Description": "Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.",
+    "Price": 9.99,
+    "PictureUrl": "images/products/02-Brinco-no-dourado.png",
+    "ProductTypeId": 2
+  },
+  {
+    "Name": "Brinco Nó Prata",
+    "Description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.",
+    "Price": 9.99,
+    "PictureUrl": "images/products/02-Brinco-no-prata.png",
+    "ProductTypeId": 2
+  },
+  {
+    "Name": "Brinco Argola Dourado",
+    "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
+    "Price": 9.99,
+    "PictureUrl": "images/products/02-Brinco-argola-dourado.png",
+    "ProductTypeId": 2
+  },
+  {
+    "Name": "Brinco Argola Prata",
+    "Description": "Aenean nec lorem. In porttitor. Donec laoreet nonummy augue.",
+    "Price": 9.99,
+    "PictureUrl": "images/products/02-Brinco-argola-prata.png",
+    "ProductTypeId": 2
+  },
+  {
+    "Name": "Brinco Liso Dourado",
+    "Description": "Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
+    "Price": 9.99,
+    "PictureUrl": "images/products/02-Brinco-liso-dourado.png",
+    "ProductTypeId": 2
+  },
+  {
+    "Name": "Brinco Brilho Prata",
+    "Description": "Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.",
+    "Price": 9.99,
+    "PictureUrl": "images/products/02-Brinco-brilho-prata.png",
+    "ProductTypeId": 2
+  },
+  {
+    "Name": "Brinco Coração Dourado",
+    "Description": "Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
+    "Price": 12.99,
+    "PictureUrl": "images/products/02-Brinco-coracao-dourado.png",
+    "ProductTypeId": 2
+  },
+  {
+    "Name": "Brinco Coração Prata",
+    "Description": "Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.",
+    "Price": 12.99,
+    "PictureUrl": "images/products/02-Brinco-coracao-prata.png",
+    "ProductTypeId": 2
+  },
+  {
+    "Name": "Conjunto de Brincos Dourado",
+    "Description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.",
+    "Price": 21.99,
+    "PictureUrl": "images/products/03-Conjunto-brincos-dourado.png",
+    "ProductTypeId": 3
+  },
+  {
+    "Name": "Conjunto de Brincos Prata",
+    "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa.",
+    "Price": 21.99,
+    "PictureUrl": "images/products/03-Conjunto-brincos-prata.png",
+    "ProductTypeId": 3
+  },
+  {
+    "Name": "Colar de Coração Maciço Dourado",
+    "Description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.",
+    "Price": 24.99,
+    "PictureUrl": "images/products/04-Colar-coracao-macico-dourado.png",
+    "ProductTypeId": 4
+  },
+  {
+    "Name": "Colar de Coração Maciço Prata",
+    "Description": "Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.",
+    "Price": 24.99,
+    "PictureUrl": "images/products/04-Colar-coracao-macico-prata.png",
+    "ProductTypeId": 4
+  },
+  {
+    "Name": "Colar de Coração Vazado Colorido",
+    "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
+    "Price": 22.99,
+    "PictureUrl": "images/products/04-Colar-doracao-vazado-coloridopng",
+    "ProductTypeId": 4
+  },
+  {
+    "Name": "Colar de Coração Vazado azul",
+    "Description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.",
+    "Price": 22.99,
+    "PictureUrl": "images/products/04-Colar-doracao-vazado-azul.png",
+    "ProductTypeId": 4
+  }
+]
