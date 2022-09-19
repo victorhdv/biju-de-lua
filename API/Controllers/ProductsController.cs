@@ -1,6 +1,7 @@
 
 using API.DTOs;
 using API.Errors;
+using API.Helpers;
 using AutoMapper;
 using Core.Entities;
 using Core.Interfaces;
@@ -8,7 +9,7 @@ using Core.Specifications;
 using Microsoft.AspNetCore.Mvc;
 
 namespace API.Controllers
-{    
+{
     public class ProductsController : BaseApiController
     {
         private readonly IGenericRepository<Product> _productsRepo;
@@ -22,13 +23,20 @@ namespace API.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<IReadOnlyList<ProductToReturnDTO>>> GetProducts()
+        public async Task<ActionResult<Pagination<ProductToReturnDTO>>> GetProducts(
+            [FromQuery] ProductSpecParams productSpecParams)
         {
-            var spec = new ProductsWithTypesSpecification();
+            var spec = new ProductsWithTypesSpecification(productSpecParams);
+
+            var countSpec = new ProductWithFiltersForCountSpecification(productSpecParams);
+
+            var totalItems = await _productsRepo.CountAsync(countSpec);
 
             var products = await _productsRepo.ListAsync(spec);
 
-            return Ok(_mapper.Map<IReadOnlyList<Product>, IReadOnlyList<ProductToReturnDTO>>(products));
+            var data = _mapper.Map<IReadOnlyList<Product>, IReadOnlyList<ProductToReturnDTO>>(products);
+
+            return Ok(new Pagination<ProductToReturnDTO>(productSpecParams.PageIndex, productSpecParams.PageSize, totalItems, data));
         }
 
         [HttpGet("{id}")]
@@ -39,9 +47,9 @@ namespace API.Controllers
         {
             var spec = new ProductsWithTypesSpecification(id);
 
-            var product =  await _productsRepo.GetEntityWithSpec(spec);
+            var product = await _productsRepo.GetEntityWithSpec(spec);
 
-            if(product == null) return NotFound(new ApiResponse(400));
+            if (product == null) return NotFound(new ApiResponse(400));
 
             return _mapper.Map<Product, ProductToReturnDTO>(product);
         }
@@ -50,7 +58,7 @@ namespace API.Controllers
         {
             var types = await _productsTypeRepo.ListAllAsync();
 
-            return Ok(types);            
+            return Ok(types);
         }
     }
 }
